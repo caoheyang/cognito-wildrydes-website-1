@@ -72,22 +72,3 @@
 请注意：tibcas-cognito-website-2我们配置的端口为4000，所以“应用程序集成-应用程序客户端设置”中的”回调URL“和”注销URL“为：”http://localhost:4000“。
 
 此时点击tibcas-cognito-website-2的”Sign In“不在需要登录,将会自动跳转到 Hosted UI 域名地址通过SSO登陆成功，然后访问 http://localhost:4000/profile 可以看到用户登陆信息。
-
-# 3、权限验证
-
-## 3.1 创建身份池
-请使用【”应用程序客户端 ID“的值和”池 ID“】创建身份池，如图：
-![avatar](pictures/12.png)
-
-## 3.2 打开 src/amplify-config.js 配置 identityPoolId 和 API Gateway信息
-![avatar](pictures/13.png)
-
-![avatar](pictures/14.png)
-
-## 3.3 配置身份池 - ”选择的经过身份验证的角色“
-
-修改为使用令牌创建角色
-
-![avatar](pictures/15.png)
-
-## 3.4 创建用户组，为用户组对应的IAM Role 配置访问权限即可。
