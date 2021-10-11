@@ -38,6 +38,7 @@ class MainApp extends React.Component {
     const session = await Auth.currentSession();
     this.setState({ authToken: session.accessToken.jwtToken });
     this.setState({ idToken: session.idToken.jwtToken });
+    console.log("API Request:JwtToken----------------------------",  session.idToken.jwtToken);
   }
 
   /**
