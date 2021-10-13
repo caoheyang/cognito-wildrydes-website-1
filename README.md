@@ -52,8 +52,6 @@
 
 ![avatar](pictures/9.png)
 
-![avatar](pictures/10.png)
-
 2、请注意：”回调URL“和”注销URL“，需要与前端系统的端口保持一致，在本示例中，请保证端口的一致性。
 
 3、打开 src/amplify-config.js 和存储【”应用程序客户端 ID“的值和”池 ID“】的文件进行配置，目前只配置标注项即可。
@@ -66,9 +64,12 @@
 
 ## 2.5 测试SSO效果
 
-*[新应用程序接入]*
-请拉取 tibcas-cognito-website-2 代码，重复 2.3 - 2.4 步骤，配置tibcas-cognito-website-2的src/amplify-config.js文件信息。
+请拉取 cognito-wildrydes-website-2 代码（地址：https://github.com/caoheyang/cognito-wildrydes-website-2），重复 2.3 – 2.4 步骤，配置 cognito-wildrydes-website-2 的 src/amplify-config.js 文件信息。
 
-请注意：tibcas-cognito-website-2我们配置的端口为4000，所以“应用程序集成-应用程序客户端设置”中的”回调URL“和”注销URL“为：”http://localhost:4000“。
+请注意：cognito-wildrydes-website-2 我们配置的端口为 4000，所以“应用程序集成-应用程序客户端设置” 中的“回调URL” 和 “注销URL” 为：“http://localhost:4000 ”。
 
-此时点击tibcas-cognito-website-2的”Sign In“不在需要登录,将会自动跳转到 Hosted UI 域名地址通过SSO登陆成功，然后访问 http://localhost:4000/profile 可以看到用户登陆信息。
+此时点击 cognito-wildrydes-website-2 的 “Sign In” 不再需要登录，将会自动跳转到 Hosted UI 域名地址通过SSO登陆成功，然后访问 http://localhost:4000/profile 可以看到用户登陆信息。
+
+# 参考链接：
+
+https://auth.serverlessworkshops.io/user_auth/user_pool.html
